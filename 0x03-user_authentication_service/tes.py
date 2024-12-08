@@ -3,8 +3,11 @@
 Main file
 """
 from user import User
+from db import DB
 
-print(User.__tablename__)
-
-for column in User.__table__.columns:
-    print("{}: {}".format(column, column.type))
+db = DB()
+user = db.add_user("youssef", "hashedpassword")
+print(user.id)
+print(user.email)
+print(user.hashed_password)
+print(user.session_id)

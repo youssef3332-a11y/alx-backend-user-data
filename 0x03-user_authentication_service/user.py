@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
+"""SQLAlchemy model for the users table."""
 # Initialize the declarative base
 Base = declarative_base()
 
